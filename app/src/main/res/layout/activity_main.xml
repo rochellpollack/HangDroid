@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:id="@+id/buttonLayout"
+        android:layout_alignParentStart="false">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startSinglePlayerGame"
+            android:text="@string/single_player"
+            android:id="@+id/btnSinglePlayer"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multi_player"
+            android:id="@+id/btnMultiPlayer"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:onClick="startMultiPlayerGame"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scores"
+            android:id="@+id/btnScores"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:onClick="openScores"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/handroid"
+        android:id="@+id/textView"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@color/green_main"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
